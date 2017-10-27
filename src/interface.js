@@ -3,6 +3,8 @@ $(document).ready(function(){
   var thermostat = new Thermostat();
   updateTemperature();
 
+  $('#power-save-off').hide();
+
   $('#temperature-up').on('click', function() {
    thermostat.increase();
    updateTemperature();
@@ -19,7 +21,23 @@ $(document).ready(function(){
    });
 
   function updateTemperature() {
-    $('#temperature').text(thermostat.temperature());
+  $('#temperature').text(thermostat.temperature());
   }
+
+  $('#power-save-on').click(function() {
+     thermostat.changePowerSavingMode();
+     $(this).hide();
+     $("#power-save-off").show();
+     updateTemperature();
+   });
+
+   $('#power-save-off').click(function() {
+      thermostat.changePowerSavingMode();
+      $(this).hide();
+       $("#power-save-on").show();
+      updateTemperature();
+    });
+
+    $('#usage').text(thermostat.energyUsage());
 
 });

@@ -7,7 +7,7 @@ function Thermostat() {
 }
 
 Thermostat.prototype.temperature = function() {
-  return this._temperature + '°C';
+  return this._temperature + 'c';
 };
 
 Thermostat.prototype.increase = function() {
@@ -42,10 +42,10 @@ Thermostat.prototype.resetTemperature = function() {
 
 Thermostat.prototype.energyUsage = function() {
   if (this._temperature < 18) {
-  return  "low-usage";
+  return  "Low";
 } else if (this._temperature < 25) {
-  return "medium-usage";
+  return "Medium";
 } else {
-  return "high-usage";
+  return "High";
 }
 };
