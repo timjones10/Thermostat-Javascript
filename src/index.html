@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Thermostat</title>
+  <link rel="stylesheet" type='text/css' href="Public/thermostat_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script src="thermostat.js"></script>
+  <script src="../lib/jquery-3.0.0.js"></script>
+  <script src="interface.js"></script>
+</head>
+
+<body class='body'>
+
+  <h1>Thermostat</h1>
+
+  <h2><span id='temperature' class="Celcius">20°C</span></h2>
+
+  <div class = 'button-container'>
+
+    <input id='temperature-up' class='button1' type='submit' name='thermostat_button' value='+'>
+    <input id='temperature-down' class='button1' type='submit' name='thermostat_button' value='-'>
+    <input id='power-save-on' class='button1'type='submit' name='thermostat_button' value='Powersave - On'>
+    <input id='power-save-on' class='button1'type='submit' name='thermostat_button' value='Powersave - Off'>
+
+  </div>
+
+  <div>
+    <div id='usage' class='words' <p><label>Energy usage: </label>Medium </p>
+    </div>
+
+    <div id='MaxTemp' class='words' <p><label>Maxtemp: </label>25°C </p>
+    </div>
+
+    <div id='MinTemp' class='words' <p><label>Mintemp: </label>10°C </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
