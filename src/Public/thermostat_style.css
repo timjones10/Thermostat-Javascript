@@ -1,3 +1,16 @@
+.Low {
+  color: green;
+}
+
+.Medium {
+  color: black;
+}
+
+.High {
+  color: red;
+}
+
+
 body{
   background-color: rgb(153, 204, 255);
 }
