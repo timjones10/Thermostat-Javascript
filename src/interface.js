@@ -41,4 +41,11 @@ $(document).ready(function(){
 
     $('#usage').text(thermostat.energyUsage());
 
+    $('#current-city').change(function() {
+  var city = $('#current-city').val();
+  $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=c7fcfb5f27fb9c51436b6ccd4afdd303&units=metric', function(data) {
+    $('#current-temperature').text(data.main.temp)
+  })
+})
+
 });

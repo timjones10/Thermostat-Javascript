@@ -11,8 +11,12 @@
 }
 
 
-body{
+.surroundings {
+  margin-top: 60px;
   background-color: rgb(153, 204, 255);
+  border-color: black;
+  border-style: dotted;
+  border-radius: 20px;
 }
 
 h1 {
@@ -36,6 +40,7 @@ h2 {
 }
 
 .button-container {
+text-align: center;
 margin-bottom: 20px;
 }
 
